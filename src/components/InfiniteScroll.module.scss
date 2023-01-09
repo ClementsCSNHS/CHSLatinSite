@@ -1,6 +1,5 @@
 .infiniteScrollLoop {
   &_outer {
-      background-color: beige;
       position: relative;
       &::after {
           content: "";
