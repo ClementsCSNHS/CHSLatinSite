@@ -1,5 +1,9 @@
 .Home {
   width: 100vw;
+
+  & > section {
+    margin-left: 15rem;
+  }
 }
 
 .domus {
