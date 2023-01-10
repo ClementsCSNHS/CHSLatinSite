@@ -4,8 +4,8 @@ import Home from './pages/Home';
 
 export default function App() {
   return (
-    <InfiniteScroll>
+    // <InfiniteScroll>
       <Home />
-    </InfiniteScroll>
+    // </InfiniteScroll>
   )
 }
