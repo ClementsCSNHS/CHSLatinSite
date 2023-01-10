@@ -1,0 +1,48 @@
+.Navigation {
+  margin-left: 2rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  top: 50%;
+
+  &_connector {
+    border-left: 1px solid white;
+    height: calc(4*1.25rem + 4*1.5rem);
+  }
+
+  &_sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  &_section {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    height: 1.5rem;
+
+    &_connector {
+      border-top: 1px solid white;
+      width: .75rem;
+    }
+
+    &_link {
+      color: white;
+      text-decoration: none;
+      font-size: .75rem;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

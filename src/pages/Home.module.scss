@@ -1,10 +1,27 @@
 .Home {
   width: 100vw;
-  height: 100vh;
 }
 
 .domus {
+  height: 50vh;
+
   &_title {
     font-size: 5rem;
   }
+}
+
+.about {
+  height: 50vh;
+}
+
+.resources {
+  height: 50vh;
+}
+
+.calendar {
+  height: 50vh;
+}
+
+.gallery {
+  height: 50vh;
 }

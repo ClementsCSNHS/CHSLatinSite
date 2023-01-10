@@ -1,8 +1,11 @@
+import Navigation from '../components/Navigation';
 import styles from './Home.module.scss';
 
 export default function Home() {
   return (
     <div className={styles.Home}>
+      <Navigation />
+
       <section id='domus' className={styles.domus}>
         <h1 className={styles.domus_title}>CHS Latin Website</h1>
       </section>
