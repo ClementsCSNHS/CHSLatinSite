@@ -1,3 +1,5 @@
+@import "../util/variables.scss";
+
 .Navigation {
   margin-left: 2rem;
   height: 100vh;
@@ -41,7 +43,7 @@
     }
 
     &_link {
-      color: white;
+      color: $c1;
       text-decoration: none;
       font-size: 0.75rem;
 
