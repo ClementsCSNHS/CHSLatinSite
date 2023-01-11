@@ -22,6 +22,8 @@ export default function Navigation({ selected }) {
 
   return (
     <div className={styles.Navigation}>
+      <h1 className={styles.title}>CHS LATIN</h1>
+
       <div className={styles.navbar}>
         <div className={styles.navbar_connector}></div>
 
