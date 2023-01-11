@@ -8,6 +8,9 @@
 
 .domus {
   height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &_title {
     font-size: 5rem;

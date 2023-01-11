@@ -1,28 +1,54 @@
+import { useRef, useEffect, useState } from 'react';
 import Navigation from '../components/Navigation';
 import styles from './Home.module.scss';
 
 export default function Home() {
+  const [currSection, setCurrSection] = useState('domus');
+
+  const refs = {
+    domus: useRef(),
+    about: useRef(),
+    resources: useRef(),
+    calendar: useRef(),
+    gallery: useRef()
+  };
+
+  useEffect(() => {
+    const onScroll = () => {
+      let curr;
+      for(const x in refs) {
+        let bounds = refs[x].current.getBoundingClientRect();
+        if(bounds.top <= 0 && bounds.bottom >= 0) {
+          curr = x;
+        }
+      }
+
+      setCurrSection(curr);
+    };
+    window.addEventListener("scroll", onScroll);
+  });
+
   return (
     <div className={styles.Home}>
-      <Navigation />
+      <Navigation selected={currSection} />
 
-      <section id='domus' className={styles.domus}>
+      <section ref={refs.domus} id='domus' className={styles.domus}>
         <h1 className={styles.domus_title}>CHS Latin Website</h1>
       </section>
 
-      <section id='about' className={styles.about}>
+      <section ref={refs.about} id='about' className={styles.about}>
         About
       </section>
 
-      <section id='resources' className={styles.resources}>
+      <section ref={refs.resources} id='resources' className={styles.resources}>
         Resources
       </section>
 
-      <section id='calendar' className={styles.calendar}>
+      <section ref={refs.calendar} id='calendar' className={styles.calendar}>
         Calendar
       </section>
 
-      <section id='gallery' className={styles.gallery}>
+      <section ref={refs.gallery} id='gallery' className={styles.gallery}>
         Gallery
       </section>
     </div>

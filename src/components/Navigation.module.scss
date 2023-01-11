@@ -43,6 +43,11 @@
         text-decoration: underline;
         cursor: pointer;
       }
+
+      &_bold {
+        font-weight: bold;
+        text-decoration: underline;
+      }
     }
   }
 }
