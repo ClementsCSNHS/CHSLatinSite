@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Navigation from "../components/Navigation";
+import Marquee from "../components/Marquee";
 import styles from "./Home.module.scss";
 import bg from "../assets/Anime_Club.png";
 
@@ -77,6 +78,7 @@ export default function Home() {
         </section>
 
         <section ref={refs.about} id="about" className={styles.about}>
+          <Marquee>Meet the Officers! </Marquee>
           About
         </section>
 

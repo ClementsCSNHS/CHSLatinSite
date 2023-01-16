@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+body {
+  overflow-x: hidden;
+}
+
 .Home {
-  width: 100vw;
+  width: 100%;
   color: white;
 }
 
