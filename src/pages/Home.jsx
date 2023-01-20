@@ -5,10 +5,10 @@ import styles from "./Home.module.scss";
 import bg from "../assets/Anime_Club.png";
 
 export default function Home() {
-  const [currSection, setCurrSection] = useState("domus");
+  const [currSection, setCurrSection] = useState("villa");
 
   const refs = {
-    domus: useRef(),
+    villa: useRef(),
     about: useRef(),
     resources: useRef(),
     calendar: useRef(),
@@ -19,7 +19,7 @@ export default function Home() {
   const maskScale = useSpring(
     useTransform(scrollYProgress || 1, [0, 0.3], [1, 9]),
     {
-      damping: 50,
+      damping: 30,
     }
   );
 
@@ -72,8 +72,8 @@ export default function Home() {
 
       <Navigation selected={currSection} />
       <div className={styles.Content}>
-        <section ref={refs.domus} id="domus" className={styles.domus}>
-          <h1 className={styles.domus_title}>CHS Latin Website</h1>
+        <section ref={refs.villa} id="villa" className={styles.villa}>
+          <h1 className={styles.villa_title}>CHS Latin Website</h1>
         </section>
 
         <section ref={refs.about} id="about" className={styles.about}>
