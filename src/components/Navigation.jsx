@@ -3,7 +3,7 @@ import styles from "./Navigation.module.scss";
 export default function Navigation({ selected }) {
   let selectedArr = [false, false, false, false, false];
   switch (selected) {
-    case "villa":
+    case "domus":
       selectedArr[0] = true;
       break;
     case "about":
@@ -31,12 +31,12 @@ export default function Navigation({ selected }) {
           <div className={styles.navbar_section}>
             <div className={styles.navbar_section_connector}></div>
             <a
-              href="#villa"
+              href="#domus"
               className={`${styles.navbar_section_link} ${
                 selectedArr[0] && styles.navbar_section_link_bold
               }`}
             >
-              VILLA
+              DOMUS
             </a>
           </div>
 
