@@ -1,6 +1,7 @@
-@import '../util/variables.scss';
+@import "../util/variables.scss";
 
 .Navigation {
+  z-index: 10;
   margin-left: 2rem;
   height: 100vh;
   position: fixed;
@@ -21,8 +22,8 @@
   transform: translateY(-50%);
 
   &_connector {
-    border-left: 1px solid $c1;
-    height: calc(4*1.25rem + 4*1.5rem);
+    border-left: 1px solid white;
+    height: calc(4 * 1.25rem + 4 * 1.5rem);
   }
 
   &_sections {
@@ -34,18 +35,18 @@
   &_section {
     display: flex;
     align-items: center;
-    gap: .75rem;
+    gap: 0.75rem;
     height: 1.5rem;
 
     &_connector {
-      border-top: 1px solid $c1;
-      width: .75rem;
+      border-top: 1px solid white;
+      width: 0.75rem;
     }
 
     &_link {
       color: $c1;
       text-decoration: none;
-      font-size: .75rem;
+      font-size: 0.75rem;
 
       &:hover {
         text-decoration: underline;
