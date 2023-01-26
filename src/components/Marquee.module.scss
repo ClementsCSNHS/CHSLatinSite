@@ -6,6 +6,7 @@ $purple-blue: #2b2b3d;
 }
 
 .marquee {
+  z-index: 10;
   font-size: 3rem;
   font-style: italic;
   rotate: (-5deg);
