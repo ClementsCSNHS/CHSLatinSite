@@ -1,3 +1,4 @@
+@import '../util/variables.scss';
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 
 $orange-red: #ff5c31;
@@ -161,9 +162,72 @@ body {
 }
 
 .about {
-  height: 200vh;
-  margin-top: 10vh;
-  width: 100vw;
+  &_desc {
+    margin: 5rem 15rem;
+
+    & p {
+      text-indent: 2rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &_divider {
+    background-color: $c3;
+
+    &_text {
+      color: $c2;
+      font-weight: bold;
+      font-size: 2rem;
+      padding: 3rem 0;
+    }
+  }
+
+  &_officers {
+    display: grid;
+    grid-template-columns: repeat(3, 18rem);
+    justify-content: center;
+    margin: 5rem 12rem;
+    gap: 3rem 2rem;
+  }
+
+  &_officer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    background-color: $c3-dark;
+
+    &_img {
+      max-width: 18rem;
+    }
+
+    &_info {
+      padding: 1rem;
+    }
+
+    &_general {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_name {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    &_insta {
+
+    }
+
+    &_title {
+      color: $c2;
+      font-style: italic;
+    }
+
+    &_text {
+      font-size: 1rem;
+    }
+  }
 
   &_top_space {
     height: 10vh;
