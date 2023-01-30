@@ -87,7 +87,31 @@ export default function Home() {
       <Navigation selected={currSection} />
       <div className={styles.Content}>
         <section ref={refs.domus} id="domus" className={styles.domus}>
-          <h1 className={styles.domus_title}>CHS Latin Website</h1>
+          <h1 className={styles.domus_title}>
+            <span>L</span>
+            <span>a</span>
+            <span>t</span>
+            <span>i</span>
+            <span>n</span>
+            <span>&nbsp;</span>
+            <span>C</span>
+            <span>l</span>
+            <span>u</span>
+            <span>b</span>
+          </h1>
+          <h2 className={styles.domus_subtitle}>Clements High School</h2>
+          <img className={styles.domus_wreath} src='wreath.png'></img>
+          <div className={styles.domus_links}>
+            <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
+              <img src='instagram.svg'/>
+            </a>
+            <a href="?facebook placeholder" className={styles.domus_links_link} target="_blank">
+              <img src='facebook.svg'/>
+            </a>
+            <a href="https://discord.gg/JAwjaM7A99" className={styles.domus_links_link} target="_blank">
+              <img src='discord.svg'/>
+            </a>
+          </div>
         </section>
 
         <section ref={refs.about} id='about' className={styles.about}>
