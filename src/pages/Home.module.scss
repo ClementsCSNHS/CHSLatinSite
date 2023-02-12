@@ -214,7 +214,7 @@ body {
     }
 
     &_insta {
-
+      display: block;
     }
 
     &_title {
@@ -227,16 +227,12 @@ body {
     }
   }
 
-  &_top_space {
-    height: 10vh;
-  }
-
-  &_bottom_space {
+  &_bottom {
     margin-top: 10vh;
-    height: 140vh;
-    background-image: url("../assets/officers.png");
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+    background: url("../assets/officers.png");
     background-size: cover;
-    filter: brightness(50%);
   }
 }
 
