@@ -160,7 +160,7 @@ body {
 }
 
 .about {
-  &_desc {
+  &_sec1 {
     margin: 5rem 15rem;
 
     & p {
@@ -261,12 +261,134 @@ body {
     }
   }
 
-  &_bottom {
+  &_sec2 {
     margin-top: 10vh;
     padding-top: 15rem;
     padding-bottom: 5rem;
     background: url("../assets/statue.png");
     background-size: cover;
+  }
+
+  &_sec3 {
+    background-color: $c4;
+    padding: 5rem 15rem;
+  }
+
+  &_compsHeader {
+    color: $c2;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.75rem;
+  }
+
+  &_comps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+
+    &_row {
+      display: flex;
+      gap: 2rem;
+    }
+
+    &_row1 {
+      height: 30rem;
+    }
+
+    &_row2 {
+      margin-top: -6rem;
+      height: 30rem;
+    }
+
+    &_row3 {
+      height: 23rem;
+    }
+
+    &_tileBg {
+      background-color: white;
+    }
+
+    &_tileBg1 {
+      clip-path: polygon(4% 0, 100% 0, 100% 80%, 4% 65%);
+      width: 50%;
+    }
+
+    &_tileBg2 {
+      clip-path: polygon(0 4%, 100% 4%, 100% 100%, 0 85%);
+      width: 50%;
+    }
+
+    &_tileBg3 {
+      clip-path: polygon(0 0, 100% 15%, 100% 95%, 0 100%);
+      width: 47%;
+    }
+
+    &_tileBg4 {
+      clip-path: polygon(0 14%, 96% 29%, 96% 89%, 0 94%);
+      width: 53%;
+    }
+
+    &_tileBg5 {
+      clip-path: polygon(4% 16%, 100% 9%, 100% 100%, 4% 100%);
+      width: 50%;
+    }
+
+    &_tileBg6 {
+      clip-path: polygon(0 7%, 100% 0, 100% 95%, 0 95%);
+      width: 50%;
+    }
+
+    &_tile {
+      width: 100%;
+      height: 100%;
+      background-color: $c4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: end;
+
+      & img {
+        width: 100%;
+        filter: grayscale(1);
+      }
+    }
+
+    &_tile1 {
+      clip-path: polygon(4.5% 0.5%, 99.5% 0.5%, 99.5% 79.5%, 4.5% 64.5%);
+    }
+
+    &_tile2 {
+      clip-path: polygon(0.5% 4.5%, 99.5% 4.5%, 99.5% 99.5%, 0.5% 84.5%);
+    }
+
+    &_tile3 {
+      clip-path: polygon(0.5% 0.5%, 99.5% 15.5%, 99.5% 94.5%, 0.5% 99.5%);
+    }
+
+    &_tile4 {
+      clip-path: polygon(0.5% 14.5%, 95.5% 29.5%, 95.5% 88.5%, 0.5% 93.5%);
+    }
+
+    &_tile5 {
+      clip-path: polygon(4.5% 16.5%, 99.5% 9.5%, 99.5% 99.5%, 4.5% 99.5%);
+    }
+
+    &_tile6 {
+      clip-path: polygon(0.5% 7.5%, 99.5% 0.5%, 99.5% 94.5%, 0.5% 94.5%);
+    }
+
+    &_title {
+      font-weight: bold;
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    &_desc {
+      width: 90%;
+    }
   }
 }
 

@@ -11,6 +11,10 @@ import Officer4 from "../assets/officers/Sophia.png";
 import Officer5 from "../assets/officers/Alyssa.png";
 import Officer6 from "../assets/officers/Arthur.png";
 
+import Comps1 from "../assets/resources/Bus.jpg";
+import Comps2 from "../assets/resources/Certamen.jpg";
+import Comps3 from "../assets/resources/NLE.jpg";
+
 export default function Home() {
   const [currSection, setCurrSection] = useState("domus");
 
@@ -119,7 +123,7 @@ export default function Home() {
         </section>
 
         <section ref={refs.about} id='about' className={styles.about}>
-          <div className={styles.about_desc}>
+          <div className={styles.about_sec1}>
             <p>We are a local Latin Club chapter part of the Junior Classical League (JCL), aiming to maintain and share the love and knowledge of Classics. Through our meetings and student-led activities, our club also competes on the Area, State, and National level in a variety of prestige-holding organizations. The variety of contests ensure that all academic, athletic, and creative people have their preferred categories.</p>
             <p>We are also recognized on a distinguished level and receive tangible awards, serving to share their knowledge and learn interesting Classical information that could serve beneficial throughout everyday life.</p>
             <p>We meet almost every Wednesday @3 PM!</p>
@@ -128,7 +132,7 @@ export default function Home() {
 
           <Marquee>Meet the Officers! </Marquee>
 
-          <div className={styles.about_bottom}>
+          <div className={styles.about_sec2}>
             <div className={styles.about_officers}>
               <div className={styles.about_officerCol_1}>
                 <div className={styles.about_officer}>
@@ -228,6 +232,54 @@ export default function Home() {
                     </div>
                     <h5 className={styles.about_officer_title}>MASCOT</h5>
                     <p className={styles.about_officer_text}>Hey everyone, I'm Arthur and I'm a senior in Latin III. I like to do mythology and advanced grammar. 90% of the time, you'll see me listening to obnoxiously loud music or playing my favorite game Hades. Also, if I crack my neck in class, I’m not dying, it’s just very loud.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className={styles.about_sec3}>
+            <h3 className={styles.about_compsHeader}>COMPETITIONS</h3>
+
+            <div className={styles.about_comps}>
+              <div className={`${styles.about_comps_row} ${styles.about_comps_row1}`}>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg1}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile1}`}>
+                    <img src={Comps1} alt="JCL" />
+                  </div>
+                </div>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg2}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile2}`}>
+                    <div className={styles.about_comps_title}>JUNIOR CLASSICAL LEAGUE</div>
+                    <div className={styles.about_comps_desc}>Join Junior Classical League! Here, you can demonstrate your passion for the Classics and gain recognition by competing at the area, state, and national level! Through an over-night trip with peers and friends, you’ll make  unforgettable memories. There are contest categories for everyone: Academic, Classical Civilization (creative arts), Certamen (see below), and Ludi (athletics).</div>
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.about_comps_row} ${styles.about_comps_row2}`}>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg3}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile3}`}>
+                    <div className={styles.about_comps_title}>CERTAMEN</div>
+                    <div className={styles.about_comps_desc}>One of the events you can participate in at JCL! It is a quiz-bowl style game that tests teams of 4 players on Classics topics including but not limited to history, mythology, Latin grammar, literature, vocabulary, mottos, and geography... It's fast-paced, extremely engaging - the ultimate way to learn a bunch of classical stuff and apply it!</div>
+                  </div>
+                </div>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg4}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile4}`}>
+                    <img src={Comps2} alt="Certamen" />
+                  </div>
+                </div>
+              </div>
+
+              <div className={`${styles.about_comps_row} ${styles.about_comps_row3}`}>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg5}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile5}`}>
+                    <img src={Comps3} alt="NLE" />
+                  </div>
+                </div>
+                <div className={`${styles.about_comps_tileBg} ${styles.about_comps_tileBg6}`}>
+                  <div className={`${styles.about_comps_tile} ${styles.about_comps_tile6}`}>
+                    <div className={styles.about_comps_title}>NATIONAL LATIN EXAM</div>
+                    <div className={styles.about_comps_desc}>The National Latin Exam is a test administered to Latin students across the nation, giving them the opportunity to receive merit-based recognition. The tests are based on information learned in class, and you will have the chance to place highly among test-takers around the U.S., winning certificates, medals, and even scholarships!</div>
                   </div>
                 </div>
               </div>
