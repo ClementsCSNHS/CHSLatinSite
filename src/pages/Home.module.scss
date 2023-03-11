@@ -393,7 +393,94 @@ body {
 }
 
 .resources {
-  height: 60vh;
+  background-color: $c4;
+  width: 100vw;
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+
+  &_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1536px;
+    margin: 0 5rem;
+    flex-grow: 1;
+  }
+  &_folder1Outline {
+    max-width: 500px;
+    
+    background-color: white;
+    flex-grow: 1;
+    clip-path: polygon(100% 0, 100% 100%, 5% 100%, 0 95%, 0 71%, 5% 66%, 5% 0);
+  }
+  &_folder1 {
+    width: 100%;
+    background-color: $c4;
+    height: 100%;
+    flex-grow: 1;
+    clip-path: polygon(99.75% 0.25%, 99.75% 99.75%, 5.25% 99.75%, 0.25% 95%, 0.25% 71%, 5.25% 66%, 5.25% 0.25%);
+  }
+  &_folder1Content {
+    padding: 2rem 4rem 2rem calc(5% + 4rem);
+  }
+  &_folder2Outline {
+    background-color: white;
+    height: 50%;
+    clip-path: polygon(100% 0, 100% 95%, 95% 100%, 71% 100%, 66% 95%, 0 95%, 0 0);
+  }
+  &_folder2 {
+    background-color: $c4;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(99.5% 0.5%, 99.5% 94.5%, 95% 99.5%, 71% 99.5%, 66% 94.5%, 0.5% 94.5%, 0.5% 0.5%);
+  }
+  &_folder3Outline {
+    background-color: white;
+    height: 50%;
+    clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 5%, 5% 0, 28% 0, 33% 5%);
+  }
+  &_folder3 {
+    background-color: $c4;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(99.5% 5.5%, 99.5% 99.5%, 0.5% 99.5%, 0.5% 5%, 5.5% 0.5%, 28% 0.5%, 33% 5.5%);
+  }
+  &_headerContainer {
+    width: 150px;
+    text-align: right;
+  }
+  &_header {
+    color: $c2;
+    transform: rotate(-90deg);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 4rem;
+    width: 20px;
+    position: relative;
+    top: 90%;
+    left: 100px;
+  }
+  &_rightContainer {
+    max-width: 400px;
+    flex-grow: 1;
+  }
+  h4 {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  ul {
+    margin-bottom: 40px;
+  }
+  li {
+    margin-bottom: 10px;
+  }
+  a {
+    color: white;
+    
+  }
 }
 
 .calendar {
