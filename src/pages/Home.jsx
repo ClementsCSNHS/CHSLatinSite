@@ -111,13 +111,13 @@ export default function Home() {
           <img className={styles.domus_wreath} src='wreath.png'></img>
           <div className={styles.domus_links}>
             <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-              <img src='instagram.svg'/>
+              <img src='instagram.svg' />
             </a>
             <a href="?facebook placeholder" className={styles.domus_links_link} target="_blank">
-              <img src='facebook.svg'/>
+              <img src='facebook.svg' />
             </a>
             <a href="https://discord.gg/JAwjaM7A99" className={styles.domus_links_link} target="_blank">
-              <img src='discord.svg'/>
+              <img src='discord.svg' />
             </a>
           </div>
         </section>
@@ -142,7 +142,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>JOHN TIAN</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -158,7 +158,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>SOPHIA CRUZ</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -176,7 +176,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>DAVID ZHANG</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -192,7 +192,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>ALYSSA KUO</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -210,7 +210,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>ANH VU</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -226,7 +226,7 @@ export default function Home() {
                       <h3 className={styles.about_officer_name}>ARTHUR VO</h3>
                       <div className={styles.about_officer_insta}>
                         <a href="https://www.instagram.com/clementslatin/" className={styles.domus_links_link} target="_blank">
-                          <img src='instagram.svg'/>
+                          <img src='instagram.svg' />
                         </a>
                       </div>
                     </div>
@@ -292,7 +292,62 @@ export default function Home() {
           id="resources"
           className={styles.resources}
         >
-          Resources
+          <div className={styles.resources_container}>
+            <div className={styles.resources_headerContainer}>
+              <h3 className={styles.resources_header}>RESOURCES</h3>
+            </div>
+            <div className={styles.resources_folder1Outline}>
+              <div className={styles.resources_folder1}>
+                <div className={styles.resources_folder1Content}>
+                  <h4>JUNIOR CLASSICAL LEAGUE</h4>
+                  <ul>
+                    <li>
+                      <a href="">ULTIMATE JCL study guide drive</a>
+                    </li>
+                    <li>
+                      <a href="">Old Tests</a>
+                    </li>
+                    <li>
+                      <a href="">Official study resource list</a>
+                    </li>
+                    <li>
+                      <a href="">Wikipedia</a>
+                    </li>
+                  </ul>
+                  <h4>CERTAMEN</h4>
+                  <ul>
+                    <li>
+                      <a href="">From TSJCL</a>
+                    </li>
+                    <li>
+                      <a href="">Yale</a>
+                    </li>
+                    <li>
+                      <a href="">Harvard</a>
+                    </li>
+                  </ul>
+                  <h4>NATIONAL LATIN EXAM</h4>
+                  <ul>
+                    <li>
+                      <a href="">Past NLE exams</a>
+                    </li>
+                    <li>
+                      <a href="">Practice quizzes</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className={styles.resources_rightContainer}>
+              <div className={styles.resources_folder2Outline}>
+                <div className={styles.resources_folder2}></div>
+              </div>
+              <div className={styles.resources_folder3Outline}>
+                <div className={styles.resources_folder3}></div>
+
+              </div>
+            </div>
+          </div>
         </section>
 
         <section ref={refs.calendar} id="calendar" className={styles.calendar}>
